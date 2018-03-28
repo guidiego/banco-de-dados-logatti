@@ -40,7 +40,7 @@ create table quarto (
 
 create table hotel_quarto (
     id integer IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    preco integer NOT NULL,
+    preco decimal NOT NULL,
     hotel_id integer NOT NULL REFERENCES hotel(cnpj)
     quarto_id integer NOT NULL REFERENCES quarto(id)
 )
