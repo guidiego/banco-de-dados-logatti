@@ -33,16 +33,16 @@ create table hotel (
     cidade_id integer NOT NULL REFERENCES cidade(id)
 );
 
-create table hotel_quarto (
-    id integer IDENTITY(1,1) NOT NULL PRIMARY KEY,
-    hotel_id integer NOT NULL REFERENCES hotel(cnpj)
-    quarto_id integer NOT NULL REFERENCES quarto(id)
-)
-
 create table quarto (
     id integer IDENTITY(1,1) NOT NULL PRIMARY KEY,
     tipo varchar (110) NOT NULL,
-    preco integer NOT NULL,
 );
+
+create table hotel_quarto (
+    id integer IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    preco integer NOT NULL,
+    hotel_id integer NOT NULL REFERENCES hotel(cnpj)
+    quarto_id integer NOT NULL REFERENCES quarto(id)
+)
 
 
