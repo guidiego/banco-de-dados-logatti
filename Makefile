@@ -23,5 +23,9 @@ run:
    		-S localhost -U SA -P '$(USER)!$(PASS)' \
 		-i $(fake_name)
 
-	docker exec -it $(CONTAINER) cat $(fake_name)
 	docker exec -it $(CONTAINER) rm $(fake_name)
+
+up:
+	$(MAKE) reset
+	$(MAKE) run script=$(workspace)/create.sql
+	$(MAKE) run script=$(workspace)/populate.sql
