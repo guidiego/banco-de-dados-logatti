@@ -39,6 +39,7 @@ insert into pais values ("Malásia", 330806, 30331007, "Ringuite Malario", "Mala
 insert into pais values ("Singapura", 710, 5535002, "Dolar de Singapura", "Inglês", , , "Singapura", "Republica Parlamentarista", @C_AS)
 insert into pais values ("Ruanda", 26338, 11609666, "Franco Ruandês", "Francês", , , "Quigali", "Republica Semi Presidencialista", @C_AFR)
 insert into pais values ("Suazilândia", 17364, 1286970, "Lilangeni suazilandês", "Inglês", , , "Lobamba", "Monarquia Absoluta", @C_AFR)
+insert into pais values ("Brasil", 8514880, 207847528, "Real ", "Português", , , "Brasília", "República federativa presidencialista", @C_AMS)
 -- POPULATE CIDADE
 
 insert into cidade values ("08-22-1817", "Araraquara", 230770, "Brasil")
@@ -51,5 +52,28 @@ insert into cidade values ("11-22-1951", "Município de São Luís do Curu", 125
 insert into cidade values ("12-14-1995", "São Luis do Piauí", 2561, "Brasil")
 insert into cidade values ("16-05-1892", "São Luís do Quitunde", 32412, "Brasil")
 insert into cidade values ("12-06-1854", "São Luís Gonzaga do Maranhão", 20156, "Brasil")
+insert into cidade values ("08-22-1550", "Helsínquia", 629512, "Finlândia")
+insert into cidade values ("08-22-1947", "Nova Déli", 249998, "Índia")
+insert into cidade values ("08-14-1967", "Islamabade", 805235, "Paquistão")
+insert into cidade values ("08-22-1817", "Sri Jaiavardenapura-Cota", xxxxxxx, "Sri Lanca")
+insert into cidade values ("08-22-1571", "Manila", 1660714, "Filipinas")
+insert into cidade values ("06-22-1527", "Jacarta", 8522589, "Indonésia")
+insert into cidade values ("08-22-1954", "Hanói", 6448837, "Vietnã")
+insert into cidade values ("05-27-1953", "Pionguiangue", 3255388, "Coreia do Norte")
+insert into cidade values ("18 A.C.", "Seul", 31102014, "Coreia do Sul")
+insert into cidade values ("15 A.C.", "Beirute", 1812000, "Líbano")
+insert into cidade values ("02-25-1576", "Luanda", 8234098, "Angola")
+insert into cidade values ("05-25-1615", "Praia", 131602, "Cabo Verde")
+insert into cidade values ("03-15-1692", "Bissau", 384960, "Guiné-Bissau")
+insert into cidade values ("03-13-1827", "Malabo", 96000, "Guiné Equatorial")
+insert into cidade values ("10-10-1887", "Maputo", 1101170, "Moçambique")
+insert into cidade values ("08-22-1817", "São Tomé", 230770, "São Tomé e Príncipe")
+insert into cidade values ("12-16-1865", "Pnom Pene", 1501725, "Camboja")
+insert into cidade values ("01-01-1972", "Cuala Lumpur", 1627172, "Malásia")
+insert into cidade values ("02-29-1901", "Singapura", 5399200, "Singapura")
+insert into cidade values ("08-22-1901", "Quigali", 771691, "Ruanda")
+insert into cidade values ("08-22-1800", "Lobamba", 5800, "Suazilândia")
+
+
 
 -- POPULATE 
