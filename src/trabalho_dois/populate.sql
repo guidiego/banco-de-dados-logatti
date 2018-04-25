@@ -8,6 +8,7 @@ insert into linha values (3426789, "Azul");
 insert into horario values ("segunda", "14:30");
 insert into horario values ("terça", "11:15");
 insert into horario values ("sexta", "11:00");
+insert into horario values ("quarta", "19:45");
 
 insert into logradouro values ("Rua Superhome morre");
 insert into logradouro values ("Rua Homem Aranha no GI");
@@ -31,5 +32,6 @@ insert into logradouro_linha values (7, 3, 2)
 insert into logradouro_linha values (8, 3, 3)
 
 insert horario_linha values (1, 1)
+insert horario_linha values (4, 1)
 insert horario_linha values (2, 2)
 insert horario_linha values (3, 3)
