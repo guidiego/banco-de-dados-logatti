@@ -1,6 +1,12 @@
 create table conta (
     usuario varchar(10) NOT NULL PRIMARY KEY,
-    senha varchar(8) NOT NULL
+    senha varchar(8) NOT NULL,
+)
+
+create table emails (
+    email varchar(80) NOT NULL PRIMARY KEY,
+    usuario varchar(10) NOT NULL REFERENCES conta(usuario),
+    CONSTRAINT email_usuario_id UNIQUE (email, usuario)
 )
 
 create table tipo (
@@ -13,8 +19,9 @@ create table classe (
 
 create table tipo_classe (
     id int IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    classe_id varchar(10) NOT NULL REFERENCES classe(nome),
     tipo_id varchar(10) NOT NULL REFERENCES tipo(nome),
-    class_id varchar(10) NOT NULL REFERENCES classe(nome),
+    CONSTRAINT tipo_classe_unique UNIQUE (tipo_id, classe_id)
 )
 
 create table personagem (
@@ -46,15 +53,3 @@ create table inventario (
     item_id int NOT NULL REFERENCES item(id),
     personagem_id varchar(10) NOT NULL REFERENCES personagem(nome),
 )
-
-CREATE TRIGGER equipaItem 
-ON inventario
-AFTER UPDATE AS
-IF EXISTS(SELECT equipado FROM inserted WHERE equipado = 1)
-BEGIN
-   UPDATE inventario
-   SET equipado=0
-   WHERE id NOT IN (SELECT id FROM INSERTED)
-   AND equipado=1
-END
-GO  
