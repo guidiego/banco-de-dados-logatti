@@ -28,4 +28,5 @@ run:
 up:
 	$(MAKE) reset
 	$(MAKE) run script=$(workspace)/create.sql
+	test ! -f $(workspace)/trigger.sql && $(MAKE) run script=$(workspace)/trigger.sql
 	$(MAKE) run script=$(workspace)/populate.sql
